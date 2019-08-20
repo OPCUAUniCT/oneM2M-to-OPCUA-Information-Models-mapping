@@ -12,3 +12,4 @@ This repository contains the representation of basic data elements belonging to 
 Alternatively you can read xml file.  
 
 ## Overview AddressSpace
+![header image](https://github.com/OPCUAUniCT/oneM2M-to-OPCUA-Information-Models-mapping/blob/master/img/AddressSpace.png)
