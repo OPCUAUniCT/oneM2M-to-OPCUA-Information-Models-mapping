@@ -1,0 +1,1842 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd" xmlns:s1="http://dieei.unict.it/oneM2M-OPCUA/Types.xsd" xmlns:ua="http://unifiedautomation.com/Configuration/NodeSet.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <NamespaceUris>
+        <Uri>http://dieei.unict.it/oneM2M-OPCUA/</Uri>
+    </NamespaceUris>
+    <Aliases>
+        <Alias Alias="Byte">i=3</Alias>
+        <Alias Alias="UInt32">i=7</Alias>
+        <Alias Alias="String">i=12</Alias>
+        <Alias Alias="DateTime">i=13</Alias>
+        <Alias Alias="ByteString">i=15</Alias>
+        <Alias Alias="LocalizedText">i=21</Alias>
+        <Alias Alias="HasModellingRule">i=37</Alias>
+        <Alias Alias="HasTypeDefinition">i=40</Alias>
+        <Alias Alias="HasSubtype">i=45</Alias>
+        <Alias Alias="HasProperty">i=46</Alias>
+        <Alias Alias="HasComponent">i=47</Alias>
+        <Alias Alias="EnumValueType">i=7594</Alias>
+        <Alias Alias="CSEDataType">ns=1;i=3002</Alias>
+        <Alias Alias="ResourceDataType">ns=1;i=3003</Alias>
+    </Aliases>
+    <Extensions>
+        <Extension>
+            <ua:ModelInfo Tool="UaModeler" Hash="5IXgEYYgCkBIWHLhes5Irw==" Version="1.6.2"/>
+        </Extension>
+    </Extensions>
+    <UADataType NodeId="ns=1;i=3002" BrowseName="1:CSEDataType">
+        <DisplayName>CSEDataType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6001</Reference>
+        </References>
+        <Definition Name="1:CSEDataType">
+            <Field SymbolicName="IN_CSE" Name="IN-CSE" Value="0"/>
+            <Field SymbolicName="MN_CSE" Name="MN-CSE" Value="1"/>
+        </Definition>
+    </UADataType>
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=3002" ValueRank="1" NodeId="ns=1;i=6001" ArrayDimensions="2" BrowseName="EnumStrings">
+        <DisplayName>EnumStrings</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=3002</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:ListOfLocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>IN-CSE</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>MN-CSE</uax:Text>
+                </uax:LocalizedText>
+            </uax:ListOfLocalizedText>
+        </Value>
+    </UAVariable>
+    <UADataType NodeId="ns=1;i=3003" BrowseName="1:ResourceDataType">
+        <DisplayName>ResourceDataType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty">ns=1;i=6006</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
+        </References>
+        <Definition Name="1:ResourceDataType">
+            <Field Name="mixed" Value="0"/>
+            <Field Name="accessControlPolicy" Value="1"/>
+            <Field Name="AE" Value="2"/>
+            <Field Name="container" Value="3"/>
+            <Field Name="contentInstance" Value="4"/>
+            <Field Name="CSEBase" Value="5"/>
+            <Field Name="delivery" Value="6"/>
+            <Field Name="eventConfig" Value="7"/>
+            <Field Name="execInstance" Value="8"/>
+            <Field Name="group" Value="9"/>
+            <Field Name="locationPolicy" Value="10"/>
+            <Field Name="m2mServiceSubscriptionProfile" Value="11"/>
+            <Field Name="mgmtCmd" Value="12"/>
+            <Field Name="mgmtObj" Value="13"/>
+            <Field Name="node" Value="14"/>
+            <Field Name="pollingChannel" Value="15"/>
+            <Field Name="remoteCSE" Value="16"/>
+            <Field Name="request" Value="17"/>
+            <Field Name="schedule" Value="18"/>
+            <Field Name="serviceSubscribedAppRule" Value="19"/>
+            <Field Name="serviceSubscribedNode" Value="20"/>
+            <Field Name="statsCollect" Value="21"/>
+            <Field Name="statsConfig" Value="22"/>
+            <Field Name="subscription" Value="23"/>
+            <Field Name="semanticDescriptior" Value="24"/>
+            <Field Name="notificationTargetMgmtPolicyRef" Value="25"/>
+            <Field Name="notificationTargetPolicy" Value="26"/>
+            <Field Name="policyDeletionRules" Value="27"/>
+            <Field Name="flexContainer" Value="28"/>
+            <Field Name="timeSeries" Value="29"/>
+            <Field Name="timeSeriesInstance" Value="30"/>
+            <Field Name="role" Value="31"/>
+            <Field Name="token" Value="32"/>
+            <Field SymbolicName="Void" Name="void" Value="33"/>
+            <Field Name="dynamicAuthorizationConsulation" Value="34"/>
+            <Field Name="authorizationDecision" Value="35"/>
+            <Field Name="authorizationPolicy" Value="36"/>
+            <Field Name="authorizationInformation" Value="37"/>
+            <Field Name="ontologyRepository" Value="38"/>
+            <Field Name="ontology" Value="39"/>
+            <Field Name="semanticMashupJobProfile" Value="40"/>
+            <Field Name="semanticMashupInstance" Value="41"/>
+            <Field Name="semanticMashupResult" Value="42"/>
+            <Field Name="AEContactList" Value="43"/>
+            <Field Name="AEContactListPerCSE" Value="44"/>
+            <Field Name="localMulticastGroup" Value="45"/>
+            <Field Name="multimediaSession" Value="46"/>
+            <Field Name="triggerRequest" Value="47"/>
+            <Field Name="crossResourceSubscription" Value="48"/>
+            <Field Name="accessControlPolicyAnnc" Value="10001"/>
+            <Field Name="AEAnnc" Value="10002"/>
+            <Field Name="containerAnnc" Value="10003"/>
+            <Field Name="contentInstanceAnnc" Value="10004"/>
+            <Field Name="groupAnnc" Value="10009"/>
+            <Field Name="locationPolicyAnnc" Value="10010"/>
+            <Field Name="mgmtObjAnnc" Value="10013"/>
+            <Field Name="nodeAnnc" Value="10014"/>
+            <Field Name="remoteCSEAnnc" Value="10016"/>
+        </Definition>
+    </UADataType>
+    <UAVariable DataType="EnumValueType" ParentNodeId="ns=1;i=3003" ValueRank="1" NodeId="ns=1;i=6006" ArrayDimensions="58" BrowseName="EnumValues">
+        <DisplayName>EnumValues</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=3003</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:ListOfExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>0</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>mixed</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>1</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>accessControlPolicy</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>2</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>AE</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>3</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>container</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>4</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>contentInstance</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>5</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>CSEBase</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>6</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>delivery</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>7</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>eventConfig</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>8</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>execInstance</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>9</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>group</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>10</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>locationPolicy</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>11</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>m2mServiceSubscriptionProfile</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>12</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>mgmtCmd</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>13</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>mgmtObj</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>14</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>node</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>15</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>pollingChannel</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>16</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>remoteCSE</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>17</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>request</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>18</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>schedule</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>19</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>serviceSubscribedAppRule</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>20</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>serviceSubscribedNode</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>21</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>statsCollect</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>22</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>statsConfig</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>23</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>subscription</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>24</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>semanticDescriptior</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>25</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>notificationTargetMgmtPolicyRef</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>26</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>notificationTargetPolicy</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>27</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>policyDeletionRules</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>28</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>flexContainer</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>29</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>timeSeries</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>30</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>timeSeriesInstance</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>31</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>role</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>32</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>token</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>33</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>void</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>34</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>dynamicAuthorizationConsulation</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>35</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>authorizationDecision</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>36</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>authorizationPolicy</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>37</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>authorizationInformation</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>38</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>ontologyRepository</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>39</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>ontology</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>40</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>semanticMashupJobProfile</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>41</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>semanticMashupInstance</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>42</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>semanticMashupResult</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>43</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>AEContactList</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>44</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>AEContactListPerCSE</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>45</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>localMulticastGroup</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>46</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>multimediaSession</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>47</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>triggerRequest</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>48</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>crossResourceSubscription</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>10001</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>accessControlPolicyAnnc</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>10002</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>AEAnnc</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>10003</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>containerAnnc</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>10004</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>contentInstanceAnnc</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>10009</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>groupAnnc</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>10010</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>locationPolicyAnnc</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>10013</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>mgmtObjAnnc</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>10014</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>nodeAnnc</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=7616</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:EnumValueType>
+                            <uax:Value>10016</uax:Value>
+                            <uax:DisplayName>
+                                <uax:Text>remoteCSEAnnc</uax:Text>
+                            </uax:DisplayName>
+                            <uax:Description/>
+                        </uax:EnumValueType>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+        </Value>
+    </UAVariable>
+    <UAVariable SymbolicName="TypeDictionary_BinarySchema" DataType="ByteString" NodeId="ns=1;i=6002" BrowseName="1:TypeDictionary">
+        <DisplayName>TypeDictionary</DisplayName>
+        <Description>Collects the data type descriptions of http://dieei.unict.it/oneM2M-OPCUA/</Description>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=72</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6003</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">i=93</Reference>
+        </References>
+        <Value>
+            <uax:ByteString>PG9wYzpUeXBlRGljdGlvbmFyeSB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZ
+        W1hLWluc3RhbmNlIiB4bWxuczp0bnM9Imh0dHA6Ly9kaWVlaS51bmljdC5pdC9vbmVNMk0tT
+        1BDVUEvIiBEZWZhdWx0Qnl0ZU9yZGVyPSJMaXR0bGVFbmRpYW4iIHhtbG5zOm9wYz0iaHR0c
+        DovL29wY2ZvdW5kYXRpb24ub3JnL0JpbmFyeVNjaGVtYS8iIHhtbG5zOnVhPSJodHRwOi8vb
+        3BjZm91bmRhdGlvbi5vcmcvVUEvIiBUYXJnZXROYW1lc3BhY2U9Imh0dHA6Ly9kaWVlaS51b
+        mljdC5pdC9vbmVNMk0tT1BDVUEvIj4KIDxvcGM6SW1wb3J0IE5hbWVzcGFjZT0iaHR0cDovL
+        29wY2ZvdW5kYXRpb24ub3JnL1VBLyIvPgogPG9wYzpFbnVtZXJhdGVkVHlwZSBMZW5ndGhJb
+        kJpdHM9IjMyIiBOYW1lPSJDU0VEYXRhVHlwZSI+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgT
+        mFtZT0iSU4tQ1NFIiBWYWx1ZT0iMCIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9I
+        k1OLUNTRSIgVmFsdWU9IjEiLz4KIDwvb3BjOkVudW1lcmF0ZWRUeXBlPgogPG9wYzpFbnVtZ
+        XJhdGVkVHlwZSBMZW5ndGhJbkJpdHM9IjMyIiBOYW1lPSJSZXNvdXJjZURhdGFUeXBlIj4KI
+        CA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJtaXhlZCIgVmFsdWU9IjAiLz4KICA8b3BjO
+        kVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJhY2Nlc3NDb250cm9sUG9saWN5IiBWYWx1ZT0iMSIvP
+        gogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9IkFFIiBWYWx1ZT0iMiIvPgogIDxvcGM6R
+        W51bWVyYXRlZFZhbHVlIE5hbWU9ImNvbnRhaW5lciIgVmFsdWU9IjMiLz4KICA8b3BjOkVud
+        W1lcmF0ZWRWYWx1ZSBOYW1lPSJjb250ZW50SW5zdGFuY2UiIFZhbHVlPSI0Ii8+CiAgPG9wY
+        zpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iQ1NFQmFzZSIgVmFsdWU9IjUiLz4KICA8b3BjOkVud
+        W1lcmF0ZWRWYWx1ZSBOYW1lPSJkZWxpdmVyeSIgVmFsdWU9IjYiLz4KICA8b3BjOkVudW1lc
+        mF0ZWRWYWx1ZSBOYW1lPSJldmVudENvbmZpZyIgVmFsdWU9IjciLz4KICA8b3BjOkVudW1lc
+        mF0ZWRWYWx1ZSBOYW1lPSJleGVjSW5zdGFuY2UiIFZhbHVlPSI4Ii8+CiAgPG9wYzpFbnVtZ
+        XJhdGVkVmFsdWUgTmFtZT0iZ3JvdXAiIFZhbHVlPSI5Ii8+CiAgPG9wYzpFbnVtZXJhdGVkV
+        mFsdWUgTmFtZT0ibG9jYXRpb25Qb2xpY3kiIFZhbHVlPSIxMCIvPgogIDxvcGM6RW51bWVyY
+        XRlZFZhbHVlIE5hbWU9Im0ybVNlcnZpY2VTdWJzY3JpcHRpb25Qcm9maWxlIiBWYWx1ZT0iM
+        TEiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJtZ210Q21kIiBWYWx1ZT0iMTIiL
+        z4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJtZ210T2JqIiBWYWx1ZT0iMTMiLz4KI
+        CA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJub2RlIiBWYWx1ZT0iMTQiLz4KICA8b3BjO
+        kVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJwb2xsaW5nQ2hhbm5lbCIgVmFsdWU9IjE1Ii8+CiAgP
+        G9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0icmVtb3RlQ1NFIiBWYWx1ZT0iMTYiLz4KICA8b
+        3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJyZXF1ZXN0IiBWYWx1ZT0iMTciLz4KICA8b3BjO
+        kVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJzY2hlZHVsZSIgVmFsdWU9IjE4Ii8+CiAgPG9wYzpFb
+        nVtZXJhdGVkVmFsdWUgTmFtZT0ic2VydmljZVN1YnNjcmliZWRBcHBSdWxlIiBWYWx1ZT0iM
+        TkiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJzZXJ2aWNlU3Vic2NyaWJlZE5vZ
+        GUiIFZhbHVlPSIyMCIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9InN0YXRzQ29sb
+        GVjdCIgVmFsdWU9IjIxIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0ic3RhdHNDb
+        25maWciIFZhbHVlPSIyMiIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9InN1YnNjc
+        mlwdGlvbiIgVmFsdWU9IjIzIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0ic2VtY
+        W50aWNEZXNjcmlwdGlvciIgVmFsdWU9IjI0Ii8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgT
+        mFtZT0ibm90aWZpY2F0aW9uVGFyZ2V0TWdtdFBvbGljeVJlZiIgVmFsdWU9IjI1Ii8+CiAgP
+        G9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0ibm90aWZpY2F0aW9uVGFyZ2V0UG9saWN5IiBWY
+        Wx1ZT0iMjYiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJwb2xpY3lEZWxldGlvb
+        lJ1bGVzIiBWYWx1ZT0iMjciLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJmbGV4Q
+        29udGFpbmVyIiBWYWx1ZT0iMjgiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJ0a
+        W1lU2VyaWVzIiBWYWx1ZT0iMjkiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJ0a
+        W1lU2VyaWVzSW5zdGFuY2UiIFZhbHVlPSIzMCIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlI
+        E5hbWU9InJvbGUiIFZhbHVlPSIzMSIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9I
+        nRva2VuIiBWYWx1ZT0iMzIiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJ2b2lkI
+        iBWYWx1ZT0iMzMiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJkeW5hbWljQXV0a
+        G9yaXphdGlvbkNvbnN1bGF0aW9uIiBWYWx1ZT0iMzQiLz4KICA8b3BjOkVudW1lcmF0ZWRWY
+        Wx1ZSBOYW1lPSJhdXRob3JpemF0aW9uRGVjaXNpb24iIFZhbHVlPSIzNSIvPgogIDxvcGM6R
+        W51bWVyYXRlZFZhbHVlIE5hbWU9ImF1dGhvcml6YXRpb25Qb2xpY3kiIFZhbHVlPSIzNiIvP
+        gogIDxvcGM6RW51bWVyYXRlZFZhbHVlIE5hbWU9ImF1dGhvcml6YXRpb25JbmZvcm1hdGlvb
+        iIgVmFsdWU9IjM3Ii8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0ib250b2xvZ3lSZ
+        XBvc2l0b3J5IiBWYWx1ZT0iMzgiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJvb
+        nRvbG9neSIgVmFsdWU9IjM5Ii8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0ic2VtY
+        W50aWNNYXNodXBKb2JQcm9maWxlIiBWYWx1ZT0iNDAiLz4KICA8b3BjOkVudW1lcmF0ZWRWY
+        Wx1ZSBOYW1lPSJzZW1hbnRpY01hc2h1cEluc3RhbmNlIiBWYWx1ZT0iNDEiLz4KICA8b3BjO
+        kVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJzZW1hbnRpY01hc2h1cFJlc3VsdCIgVmFsdWU9IjQyI
+        i8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iQUVDb250YWN0TGlzdCIgVmFsdWU9I
+        jQzIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iQUVDb250YWN0TGlzdFBlckNTR
+        SIgVmFsdWU9IjQ0Ii8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0ibG9jYWxNdWx0a
+        WNhc3RHcm91cCIgVmFsdWU9IjQ1Ii8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0ib
+        XVsdGltZWRpYVNlc3Npb24iIFZhbHVlPSI0NiIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlI
+        E5hbWU9InRyaWdnZXJSZXF1ZXN0IiBWYWx1ZT0iNDciLz4KICA8b3BjOkVudW1lcmF0ZWRWY
+        Wx1ZSBOYW1lPSJjcm9zc1Jlc291cmNlU3Vic2NyaXB0aW9uIiBWYWx1ZT0iNDgiLz4KICA8b
+        3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJhY2Nlc3NDb250cm9sUG9saWN5QW5uYyIgVmFsd
+        WU9IjEwMDAxIi8+CiAgPG9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iQUVBbm5jIiBWYWx1Z
+        T0iMTAwMDIiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJjb250YWluZXJBbm5jI
+        iBWYWx1ZT0iMTAwMDMiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJjb250ZW50S
+        W5zdGFuY2VBbm5jIiBWYWx1ZT0iMTAwMDQiLz4KICA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOY
+        W1lPSJncm91cEFubmMiIFZhbHVlPSIxMDAwOSIvPgogIDxvcGM6RW51bWVyYXRlZFZhbHVlI
+        E5hbWU9ImxvY2F0aW9uUG9saWN5QW5uYyIgVmFsdWU9IjEwMDEwIi8+CiAgPG9wYzpFbnVtZ
+        XJhdGVkVmFsdWUgTmFtZT0ibWdtdE9iakFubmMiIFZhbHVlPSIxMDAxMyIvPgogIDxvcGM6R
+        W51bWVyYXRlZFZhbHVlIE5hbWU9Im5vZGVBbm5jIiBWYWx1ZT0iMTAwMTQiLz4KICA8b3BjO
+        kVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJyZW1vdGVDU0VBbm5jIiBWYWx1ZT0iMTAwMTYiLz4KI
+        Dwvb3BjOkVudW1lcmF0ZWRUeXBlPgo8L29wYzpUeXBlRGljdGlvbmFyeT4K</uax:ByteString>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=6002" NodeId="ns=1;i=6003" BrowseName="NamespaceUri">
+        <DisplayName>NamespaceUri</DisplayName>
+        <Description>A URI that uniquely identifies the dictionary.</Description>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6002</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:String>http://dieei.unict.it/oneM2M-OPCUA/</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable SymbolicName="TypeDictionary_XmlSchema" DataType="ByteString" NodeId="ns=1;i=6004" BrowseName="1:TypeDictionary">
+        <DisplayName>TypeDictionary</DisplayName>
+        <Description>Collects the data type descriptions of http://dieei.unict.it/oneM2M-OPCUA/</Description>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=72</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6005</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">i=92</Reference>
+        </References>
+        <Value>
+            <uax:ByteString>PHhzOnNjaGVtYSBlbGVtZW50Rm9ybURlZmF1bHQ9InF1YWxpZmllZCIgdGFyZ2V0TmFtZXNwYWNlPSJod
+        HRwOi8vZGllZWkudW5pY3QuaXQvb25lTTJNLU9QQ1VBL1R5cGVzLnhzZCIgeG1sbnM6dG5zP
+        SJodHRwOi8vZGllZWkudW5pY3QuaXQvb25lTTJNLU9QQ1VBL1R5cGVzLnhzZCIgeG1sbnM6d
+        WE9Imh0dHA6Ly9vcGNmb3VuZGF0aW9uLm9yZy9VQS8yMDA4LzAyL1R5cGVzLnhzZCIgeG1sb
+        nM6eHM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIj4KIDx4czppbXBvcnQgb
+        mFtZXNwYWNlPSJodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvMjAwOC8wMi9UeXBlcy54c
+        2QiLz4KIDx4czpzaW1wbGVUeXBlIG5hbWU9IkNTRURhdGFUeXBlIj4KICA8eHM6cmVzdHJpY
+        3Rpb24gYmFzZT0ieHM6c3RyaW5nIj4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJJTi1DU
+        0VfMCIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Ik1OLUNTRV8xIi8+CiAgPC94czpyZ
+        XN0cmljdGlvbj4KIDwveHM6c2ltcGxlVHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpDU
+        0VEYXRhVHlwZSIgbmFtZT0iQ1NFRGF0YVR5cGUiLz4KIDx4czpjb21wbGV4VHlwZSBuYW1lP
+        SJMaXN0T2ZDU0VEYXRhVHlwZSI+CiAgPHhzOnNlcXVlbmNlPgogICA8eHM6ZWxlbWVudCBta
+        W5PY2N1cnM9IjAiIG1heE9jY3Vycz0idW5ib3VuZGVkIiB0eXBlPSJ0bnM6Q1NFRGF0YVR5c
+        GUiIG5hbWU9IkNTRURhdGFUeXBlIiBuaWxsYWJsZT0idHJ1ZSIvPgogIDwveHM6c2VxdWVuY
+        2U+CiA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOkxpc3RPZkNTR
+        URhdGFUeXBlIiBuYW1lPSJMaXN0T2ZDU0VEYXRhVHlwZSIgbmlsbGFibGU9InRydWUiLz4KI
+        Dx4czpzaW1wbGVUeXBlIG5hbWU9IlJlc291cmNlRGF0YVR5cGUiPgogIDx4czpyZXN0cmljd
+        GlvbiBiYXNlPSJ4czpzdHJpbmciPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Im1peGVkX
+        zAiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJhY2Nlc3NDb250cm9sUG9saWN5XzEiL
+        z4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJBRV8yIi8+CiAgIDx4czplbnVtZXJhdGlvb
+        iB2YWx1ZT0iY29udGFpbmVyXzMiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJjb250Z
+        W50SW5zdGFuY2VfNCIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IkNTRUJhc2VfNSIvP
+        gogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9ImRlbGl2ZXJ5XzYiLz4KICAgPHhzOmVudW1lc
+        mF0aW9uIHZhbHVlPSJldmVudENvbmZpZ183Ii8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1Z
+        T0iZXhlY0luc3RhbmNlXzgiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJncm91cF85I
+        i8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0ibG9jYXRpb25Qb2xpY3lfMTAiLz4KICAgP
+        HhzOmVudW1lcmF0aW9uIHZhbHVlPSJtMm1TZXJ2aWNlU3Vic2NyaXB0aW9uUHJvZmlsZV8xM
+        SIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Im1nbXRDbWRfMTIiLz4KICAgPHhzOmVud
+        W1lcmF0aW9uIHZhbHVlPSJtZ210T2JqXzEzIi8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1Z
+        T0ibm9kZV8xNCIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9InBvbGxpbmdDaGFubmVsX
+        zE1Ii8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0icmVtb3RlQ1NFXzE2Ii8+CiAgIDx4c
+        zplbnVtZXJhdGlvbiB2YWx1ZT0icmVxdWVzdF8xNyIvPgogICA8eHM6ZW51bWVyYXRpb24gd
+        mFsdWU9InNjaGVkdWxlXzE4Ii8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0ic2VydmljZ
+        VN1YnNjcmliZWRBcHBSdWxlXzE5Ii8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0ic2Vyd
+        mljZVN1YnNjcmliZWROb2RlXzIwIi8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0ic3Rhd
+        HNDb2xsZWN0XzIxIi8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0ic3RhdHNDb25maWdfM
+        jIiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJzdWJzY3JpcHRpb25fMjMiLz4KICAgP
+        HhzOmVudW1lcmF0aW9uIHZhbHVlPSJzZW1hbnRpY0Rlc2NyaXB0aW9yXzI0Ii8+CiAgIDx4c
+        zplbnVtZXJhdGlvbiB2YWx1ZT0ibm90aWZpY2F0aW9uVGFyZ2V0TWdtdFBvbGljeVJlZl8yN
+        SIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Im5vdGlmaWNhdGlvblRhcmdldFBvbGlje
+        V8yNiIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9InBvbGljeURlbGV0aW9uUnVsZXNfM
+        jciLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJmbGV4Q29udGFpbmVyXzI4Ii8+CiAgI
+        Dx4czplbnVtZXJhdGlvbiB2YWx1ZT0idGltZVNlcmllc18yOSIvPgogICA8eHM6ZW51bWVyY
+        XRpb24gdmFsdWU9InRpbWVTZXJpZXNJbnN0YW5jZV8zMCIvPgogICA8eHM6ZW51bWVyYXRpb
+        24gdmFsdWU9InJvbGVfMzEiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJ0b2tlbl8zM
+        iIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9InZvaWRfMzMiLz4KICAgPHhzOmVudW1lc
+        mF0aW9uIHZhbHVlPSJkeW5hbWljQXV0aG9yaXphdGlvbkNvbnN1bGF0aW9uXzM0Ii8+CiAgI
+        Dx4czplbnVtZXJhdGlvbiB2YWx1ZT0iYXV0aG9yaXphdGlvbkRlY2lzaW9uXzM1Ii8+CiAgI
+        Dx4czplbnVtZXJhdGlvbiB2YWx1ZT0iYXV0aG9yaXphdGlvblBvbGljeV8zNiIvPgogICA8e
+        HM6ZW51bWVyYXRpb24gdmFsdWU9ImF1dGhvcml6YXRpb25JbmZvcm1hdGlvbl8zNyIvPgogI
+        CA8eHM6ZW51bWVyYXRpb24gdmFsdWU9Im9udG9sb2d5UmVwb3NpdG9yeV8zOCIvPgogICA8e
+        HM6ZW51bWVyYXRpb24gdmFsdWU9Im9udG9sb2d5XzM5Ii8+CiAgIDx4czplbnVtZXJhdGlvb
+        iB2YWx1ZT0ic2VtYW50aWNNYXNodXBKb2JQcm9maWxlXzQwIi8+CiAgIDx4czplbnVtZXJhd
+        GlvbiB2YWx1ZT0ic2VtYW50aWNNYXNodXBJbnN0YW5jZV80MSIvPgogICA8eHM6ZW51bWVyY
+        XRpb24gdmFsdWU9InNlbWFudGljTWFzaHVwUmVzdWx0XzQyIi8+CiAgIDx4czplbnVtZXJhd
+        GlvbiB2YWx1ZT0iQUVDb250YWN0TGlzdF80MyIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsd
+        WU9IkFFQ29udGFjdExpc3RQZXJDU0VfNDQiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlP
+        SJsb2NhbE11bHRpY2FzdEdyb3VwXzQ1Ii8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0ib
+        XVsdGltZWRpYVNlc3Npb25fNDYiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJ0cmlnZ
+        2VyUmVxdWVzdF80NyIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9ImNyb3NzUmVzb3VyY
+        2VTdWJzY3JpcHRpb25fNDgiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJhY2Nlc3NDb
+        250cm9sUG9saWN5QW5uY18xMDAwMSIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9IkFFQ
+        W5uY18xMDAwMiIvPgogICA8eHM6ZW51bWVyYXRpb24gdmFsdWU9ImNvbnRhaW5lckFubmNfM
+        TAwMDMiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJjb250ZW50SW5zdGFuY2VBbm5jX
+        zEwMDA0Ii8+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iZ3JvdXBBbm5jXzEwMDA5Ii8+C
+        iAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0ibG9jYXRpb25Qb2xpY3lBbm5jXzEwMDEwIi8+C
+        iAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0ibWdtdE9iakFubmNfMTAwMTMiLz4KICAgPHhzO
+        mVudW1lcmF0aW9uIHZhbHVlPSJub2RlQW5uY18xMDAxNCIvPgogICA8eHM6ZW51bWVyYXRpb
+        24gdmFsdWU9InJlbW90ZUNTRUFubmNfMTAwMTYiLz4KICA8L3hzOnJlc3RyaWN0aW9uPgogP
+        C94czpzaW1wbGVUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOlJlc291cmNlRGF0YVR5c
+        GUiIG5hbWU9IlJlc291cmNlRGF0YVR5cGUiLz4KIDx4czpjb21wbGV4VHlwZSBuYW1lPSJMa
+        XN0T2ZSZXNvdXJjZURhdGFUeXBlIj4KICA8eHM6c2VxdWVuY2U+CiAgIDx4czplbGVtZW50I
+        G1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSJ1bmJvdW5kZWQiIHR5cGU9InRuczpSZXNvdXJjZ
+        URhdGFUeXBlIiBuYW1lPSJSZXNvdXJjZURhdGFUeXBlIiBuaWxsYWJsZT0idHJ1ZSIvPgogI
+        DwveHM6c2VxdWVuY2U+CiA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0id
+        G5zOkxpc3RPZlJlc291cmNlRGF0YVR5cGUiIG5hbWU9Ikxpc3RPZlJlc291cmNlRGF0YVR5c
+        GUiIG5pbGxhYmxlPSJ0cnVlIi8+CjwveHM6c2NoZW1hPgo=</uax:ByteString>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=6004" NodeId="ns=1;i=6005" BrowseName="NamespaceUri">
+        <DisplayName>NamespaceUri</DisplayName>
+        <Description>A URI that uniquely identifies the dictionary.</Description>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6004</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:String>http://dieei.unict.it/oneM2M-OPCUA/Types.xsd</uax:String>
+        </Value>
+    </UAVariable>
+    <UAObjectType IsAbstract="true" NodeId="ns=1;i=1002" BrowseName="1:ResourceObjectType">
+        <DisplayName>ResourceObjectType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty">ns=1;i=6012</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6011</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6009</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6007</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6010</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6008</Reference>
+        </References>
+    </UAObjectType>
+    <UAVariable DataType="DateTime" ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=6012" BrowseName="1:creationTime" AccessLevel="3">
+        <DisplayName>creationTime</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="DateTime" ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=6011" BrowseName="1:lastModifiedItem" AccessLevel="3">
+        <DisplayName>lastModifiedItem</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=6009" BrowseName="1:parentID" AccessLevel="3">
+        <DisplayName>parentID</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=6007" BrowseName="1:resourceID" AccessLevel="3">
+        <DisplayName>resourceID</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=6010" BrowseName="1:resourceName" AccessLevel="3">
+        <DisplayName>resourceName</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="ResourceDataType" ParentNodeId="ns=1;i=1002" NodeId="ns=1;i=6008" BrowseName="1:resourceType" AccessLevel="3">
+        <DisplayName>resourceType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
+        </References>
+    </UAVariable>
+    <UAObjectType NodeId="ns=1;i=1007" BrowseName="1:aeObjectType">
+        <DisplayName>aeObjectType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent">ns=1;i=5002</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6030</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1002</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6031</Reference>
+        </References>
+    </UAObjectType>
+    <UAObject SymbolicName="container" ParentNodeId="ns=1;i=1007" NodeId="ns=1;i=5002" BrowseName="1:&lt;container>">
+        <DisplayName>&lt;container></DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1007</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1005</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6033</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6032</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6034</Reference>
+            <Reference ReferenceType="HasModellingRule">i=11508</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6035</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6036</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6037</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6038</Reference>
+        </References>
+    </UAObject>
+    <UAVariable DataType="DateTime" ParentNodeId="ns=1;i=5002" NodeId="ns=1;i=6033" BrowseName="1:creationTime" AccessLevel="3">
+        <DisplayName>creationTime</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5002</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="UInt32" ParentNodeId="ns=1;i=5002" NodeId="ns=1;i=6032" BrowseName="1:currentNrOfInstances" AccessLevel="3">
+        <DisplayName>currentNrOfInstances</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5002</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="DateTime" ParentNodeId="ns=1;i=5002" NodeId="ns=1;i=6034" BrowseName="1:lastModifiedItem" AccessLevel="3">
+        <DisplayName>lastModifiedItem</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5002</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=5002" NodeId="ns=1;i=6035" BrowseName="1:parentID" AccessLevel="3">
+        <DisplayName>parentID</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5002</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=5002" NodeId="ns=1;i=6036" BrowseName="1:resourceID" AccessLevel="3">
+        <DisplayName>resourceID</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5002</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=5002" NodeId="ns=1;i=6037" BrowseName="1:resourceName" AccessLevel="3">
+        <DisplayName>resourceName</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5002</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="ResourceDataType" ParentNodeId="ns=1;i=5002" NodeId="ns=1;i=6038" BrowseName="1:resourceType" AccessLevel="3">
+        <DisplayName>resourceType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5002</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable SymbolicName="ae_ID" DataType="LocalizedText" ParentNodeId="ns=1;i=1007" NodeId="ns=1;i=6030" BrowseName="1:ae-ID" AccessLevel="3">
+        <DisplayName>ae-ID</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1007</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable SymbolicName="app_ID" DataType="LocalizedText" ParentNodeId="ns=1;i=1007" NodeId="ns=1;i=6031" BrowseName="1:app-ID" AccessLevel="3">
+        <DisplayName>app-ID</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1007</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAObjectType NodeId="ns=1;i=1005" BrowseName="1:containerObjectType">
+        <DisplayName>containerObjectType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent">ns=1;i=5001</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1002</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6017</Reference>
+        </References>
+    </UAObjectType>
+    <UAObject SymbolicName="contentInstance" ParentNodeId="ns=1;i=1005" NodeId="ns=1;i=5001" BrowseName="1:&lt;contentInstance>">
+        <DisplayName>&lt;contentInstance></DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1005</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6018</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1004</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6019</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6020</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6021</Reference>
+            <Reference ReferenceType="HasModellingRule">i=11508</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6022</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6023</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6024</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6025</Reference>
+        </References>
+    </UAObject>
+    <UAVariable ParentNodeId="ns=1;i=5001" NodeId="ns=1;i=6018" BrowseName="1:content" AccessLevel="3">
+        <DisplayName>content</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5001</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Byte" ParentNodeId="ns=1;i=5001" NodeId="ns=1;i=6019" BrowseName="1:contentSize" AccessLevel="3">
+        <DisplayName>contentSize</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5001</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="DateTime" ParentNodeId="ns=1;i=5001" NodeId="ns=1;i=6020" BrowseName="1:creationTime" AccessLevel="3">
+        <DisplayName>creationTime</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5001</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="DateTime" ParentNodeId="ns=1;i=5001" NodeId="ns=1;i=6021" BrowseName="1:lastModifiedItem" AccessLevel="3">
+        <DisplayName>lastModifiedItem</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5001</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=5001" NodeId="ns=1;i=6022" BrowseName="1:parentID" AccessLevel="3">
+        <DisplayName>parentID</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5001</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=5001" NodeId="ns=1;i=6023" BrowseName="1:resourceID" AccessLevel="3">
+        <DisplayName>resourceID</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5001</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=5001" NodeId="ns=1;i=6024" BrowseName="1:resourceName" AccessLevel="3">
+        <DisplayName>resourceName</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5001</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="ResourceDataType" ParentNodeId="ns=1;i=5001" NodeId="ns=1;i=6025" BrowseName="1:resourceType" AccessLevel="3">
+        <DisplayName>resourceType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5001</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="UInt32" ParentNodeId="ns=1;i=1005" NodeId="ns=1;i=6017" BrowseName="1:currentNrOfInstances" AccessLevel="3">
+        <DisplayName>currentNrOfInstances</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1005</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAObjectType NodeId="ns=1;i=1004" BrowseName="1:contentInstanceObjectType">
+        <DisplayName>contentInstanceObjectType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent">ns=1;i=6015</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1002</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6016</Reference>
+        </References>
+    </UAObjectType>
+    <UAVariable ParentNodeId="ns=1;i=1004" NodeId="ns=1;i=6015" BrowseName="1:content" AccessLevel="3">
+        <DisplayName>content</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1004</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Byte" ParentNodeId="ns=1;i=1004" NodeId="ns=1;i=6016" BrowseName="1:contentSize" AccessLevel="3">
+        <DisplayName>contentSize</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1004</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAObjectType NodeId="ns=1;i=1003" BrowseName="1:cseBaseObjectType">
+        <DisplayName>cseBaseObjectType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent">ns=1;i=5003</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1002</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6013</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6014</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=5004</Reference>
+        </References>
+    </UAObjectType>
+    <UAObject SymbolicName="ae" ParentNodeId="ns=1;i=1003" NodeId="ns=1;i=5003" BrowseName="1:&lt;ae>">
+        <DisplayName>&lt;ae></DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1003</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6039</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1007</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6040</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6041</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6042</Reference>
+            <Reference ReferenceType="HasModellingRule">i=11508</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6043</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6044</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6045</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6046</Reference>
+        </References>
+    </UAObject>
+    <UAVariable SymbolicName="ae_ID" DataType="LocalizedText" ParentNodeId="ns=1;i=5003" NodeId="ns=1;i=6039" BrowseName="1:ae-ID" AccessLevel="3">
+        <DisplayName>ae-ID</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5003</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable SymbolicName="app_ID" DataType="LocalizedText" ParentNodeId="ns=1;i=5003" NodeId="ns=1;i=6040" BrowseName="1:app-ID" AccessLevel="3">
+        <DisplayName>app-ID</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5003</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="DateTime" ParentNodeId="ns=1;i=5003" NodeId="ns=1;i=6041" BrowseName="1:creationTime" AccessLevel="3">
+        <DisplayName>creationTime</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5003</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="DateTime" ParentNodeId="ns=1;i=5003" NodeId="ns=1;i=6042" BrowseName="1:lastModifiedItem" AccessLevel="3">
+        <DisplayName>lastModifiedItem</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5003</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=5003" NodeId="ns=1;i=6043" BrowseName="1:parentID" AccessLevel="3">
+        <DisplayName>parentID</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5003</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=5003" NodeId="ns=1;i=6044" BrowseName="1:resourceID" AccessLevel="3">
+        <DisplayName>resourceID</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5003</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=5003" NodeId="ns=1;i=6045" BrowseName="1:resourceName" AccessLevel="3">
+        <DisplayName>resourceName</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5003</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="ResourceDataType" ParentNodeId="ns=1;i=5003" NodeId="ns=1;i=6046" BrowseName="1:resourceType" AccessLevel="3">
+        <DisplayName>resourceType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5003</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=1003" NodeId="ns=1;i=6013" BrowseName="1:cseID" AccessLevel="3">
+        <DisplayName>cseID</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1003</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="CSEDataType" ParentNodeId="ns=1;i=1003" NodeId="ns=1;i=6014" BrowseName="1:cseType" AccessLevel="3">
+        <DisplayName>cseType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1003</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAObject ParentNodeId="ns=1;i=1003" NodeId="ns=1;i=5004" BrowseName="1:remote">
+        <DisplayName>remote</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent">ns=1;i=5005</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1003</Reference>
+        </References>
+    </UAObject>
+    <UAObject SymbolicName="remoteCSE" ParentNodeId="ns=1;i=5004" NodeId="ns=1;i=5005" BrowseName="1:&lt;remoteCSE>">
+        <DisplayName>&lt;remoteCSE></DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5004</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6067</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6057</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=5007</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6066</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6068</Reference>
+            <Reference ReferenceType="HasModellingRule">i=11510</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6069</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1008</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6070</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6071</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6072</Reference>
+        </References>
+    </UAObject>
+    <UAVariable DataType="DateTime" ParentNodeId="ns=1;i=5005" NodeId="ns=1;i=6067" BrowseName="1:creationTime" AccessLevel="3">
+        <DisplayName>creationTime</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5005</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable SymbolicName="cse_ID" DataType="LocalizedText" ParentNodeId="ns=1;i=5005" NodeId="ns=1;i=6057" BrowseName="1:cse-ID" AccessLevel="3">
+        <DisplayName>cse-ID</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5005</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAObject ParentNodeId="ns=1;i=5005" NodeId="ns=1;i=5007" BrowseName="1:cseBase">
+        <DisplayName>cseBase</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty">ns=1;i=6058</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5005</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1003</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6059</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6060</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6061</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6062</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6063</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6064</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6065</Reference>
+        </References>
+    </UAObject>
+    <UAVariable DataType="DateTime" ParentNodeId="ns=1;i=5007" NodeId="ns=1;i=6058" BrowseName="1:creationTime" AccessLevel="3">
+        <DisplayName>creationTime</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5007</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=5007" NodeId="ns=1;i=6059" BrowseName="1:cseID" AccessLevel="3">
+        <DisplayName>cseID</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5007</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="CSEDataType" ParentNodeId="ns=1;i=5007" NodeId="ns=1;i=6060" BrowseName="1:cseType" AccessLevel="3">
+        <DisplayName>cseType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5007</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="DateTime" ParentNodeId="ns=1;i=5007" NodeId="ns=1;i=6061" BrowseName="1:lastModifiedItem" AccessLevel="3">
+        <DisplayName>lastModifiedItem</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5007</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=5007" NodeId="ns=1;i=6062" BrowseName="1:parentID" AccessLevel="3">
+        <DisplayName>parentID</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5007</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=5007" NodeId="ns=1;i=6063" BrowseName="1:resourceID" AccessLevel="3">
+        <DisplayName>resourceID</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5007</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=5007" NodeId="ns=1;i=6064" BrowseName="1:resourceName" AccessLevel="3">
+        <DisplayName>resourceName</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5007</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="ResourceDataType" ParentNodeId="ns=1;i=5007" NodeId="ns=1;i=6065" BrowseName="1:resourceType" AccessLevel="3">
+        <DisplayName>resourceType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5007</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="CSEDataType" ParentNodeId="ns=1;i=5005" NodeId="ns=1;i=6066" BrowseName="1:cseType" AccessLevel="3">
+        <DisplayName>cseType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5005</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="DateTime" ParentNodeId="ns=1;i=5005" NodeId="ns=1;i=6068" BrowseName="1:lastModifiedItem" AccessLevel="3">
+        <DisplayName>lastModifiedItem</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5005</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=5005" NodeId="ns=1;i=6069" BrowseName="1:parentID" AccessLevel="3">
+        <DisplayName>parentID</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5005</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=5005" NodeId="ns=1;i=6070" BrowseName="1:resourceID" AccessLevel="3">
+        <DisplayName>resourceID</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5005</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=5005" NodeId="ns=1;i=6071" BrowseName="1:resourceName" AccessLevel="3">
+        <DisplayName>resourceName</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5005</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="ResourceDataType" ParentNodeId="ns=1;i=5005" NodeId="ns=1;i=6072" BrowseName="1:resourceType" AccessLevel="3">
+        <DisplayName>resourceType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5005</Reference>
+        </References>
+    </UAVariable>
+    <UAObjectType NodeId="ns=1;i=1006" BrowseName="1:groupObjectType">
+        <DisplayName>groupObjectType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty">ns=1;i=6027</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1002</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6028</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6029</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6026</Reference>
+        </References>
+    </UAObjectType>
+    <UAVariable DataType="UInt32" ParentNodeId="ns=1;i=1006" NodeId="ns=1;i=6027" BrowseName="1:currentNrOfMembers" AccessLevel="3">
+        <DisplayName>currentNrOfMembers</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1006</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="UInt32" ParentNodeId="ns=1;i=1006" NodeId="ns=1;i=6028" BrowseName="1:maxNrOfMembers" AccessLevel="3">
+        <DisplayName>maxNrOfMembers</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1006</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=1006" ValueRank="1" NodeId="ns=1;i=6029" ArrayDimensions="0" BrowseName="1:memberIDs" AccessLevel="3">
+        <DisplayName>memberIDs</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1006</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="ResourceDataType" ParentNodeId="ns=1;i=1006" NodeId="ns=1;i=6026" BrowseName="1:memberType" AccessLevel="3">
+        <DisplayName>memberType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1006</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAObjectType NodeId="ns=1;i=1008" BrowseName="1:remoteCSEObjectType">
+        <DisplayName>remoteCSEObjectType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty">ns=1;i=6047</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=5006</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6048</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1002</Reference>
+        </References>
+    </UAObjectType>
+    <UAVariable SymbolicName="cse_ID" DataType="LocalizedText" ParentNodeId="ns=1;i=1008" NodeId="ns=1;i=6047" BrowseName="1:cse-ID" AccessLevel="3">
+        <DisplayName>cse-ID</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1008</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAObject ParentNodeId="ns=1;i=1008" NodeId="ns=1;i=5006" BrowseName="1:cseBase">
+        <DisplayName>cseBase</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty">ns=1;i=6051</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1008</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1003</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6049</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6050</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6052</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6053</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6054</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6055</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6056</Reference>
+        </References>
+    </UAObject>
+    <UAVariable DataType="DateTime" ParentNodeId="ns=1;i=5006" NodeId="ns=1;i=6051" BrowseName="1:creationTime" AccessLevel="3">
+        <DisplayName>creationTime</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5006</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=5006" NodeId="ns=1;i=6049" BrowseName="1:cseID" AccessLevel="3">
+        <DisplayName>cseID</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5006</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="CSEDataType" ParentNodeId="ns=1;i=5006" NodeId="ns=1;i=6050" BrowseName="1:cseType" AccessLevel="3">
+        <DisplayName>cseType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5006</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="DateTime" ParentNodeId="ns=1;i=5006" NodeId="ns=1;i=6052" BrowseName="1:lastModifiedItem" AccessLevel="3">
+        <DisplayName>lastModifiedItem</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5006</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=5006" NodeId="ns=1;i=6053" BrowseName="1:parentID" AccessLevel="3">
+        <DisplayName>parentID</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5006</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=5006" NodeId="ns=1;i=6054" BrowseName="1:resourceID" AccessLevel="3">
+        <DisplayName>resourceID</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5006</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="LocalizedText" ParentNodeId="ns=1;i=5006" NodeId="ns=1;i=6055" BrowseName="1:resourceName" AccessLevel="3">
+        <DisplayName>resourceName</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5006</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="ResourceDataType" ParentNodeId="ns=1;i=5006" NodeId="ns=1;i=6056" BrowseName="1:resourceType" AccessLevel="3">
+        <DisplayName>resourceType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5006</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="CSEDataType" ParentNodeId="ns=1;i=1008" NodeId="ns=1;i=6048" BrowseName="1:cseType" AccessLevel="3">
+        <DisplayName>cseType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1008</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+</UANodeSet>
