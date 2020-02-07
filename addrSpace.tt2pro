@@ -1,0 +1,31 @@
+###########################
+# UaModeler Project File  #
+# Generated at 07.02.2020 #
+###########################
+
+PROJECTNAME = sdasd
+
+TEMPLATESET = ($TEMPLATES)/cpp/v1_6/t2/cpp_server.tt2set
+
+MODELS += ($MODELS)/Opc.Ua.NodeSet2.ua \
+    sdasd.ua \
+    ua file/onem2m_-_opc_ua.ua
+
+VARIABLES+= sdasd.ua: CreateStringNodeIds=false; DllExportPrefix=sad; NamespaceName=sad; NamespacePrefix=sad; \
+    ua file/onem2m_-_opc_ua.ua: CreateStringNodeIds=false; DllExportPrefix=asd; NamespaceName=test; NamespacePrefix=opcua-onem2m; 
+
+COLORS = ($MODELS)/Opc.Ua.NodeSet2.ua: #0000ff\
+    sdasd.ua: #008000\
+    ua file/onem2m_-_opc_ua.ua: #0000ff
+
+OUTPUTPATH = 
+
+GENERATE += sdasd.ua \
+    ua file/onem2m_-_opc_ua.ua
+
+NODEACCESSINFOROLES += Administrator \
+    SecurityAdmin \
+    ConfigurationAdmin \
+    Operator \
+    Observer
+
